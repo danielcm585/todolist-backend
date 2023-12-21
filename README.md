@@ -25,6 +25,13 @@
       create database todolist;
       ```
 
+- Complete the environment variables
+  - Copy from `.env.sample`
+    ```
+    cp .evn.sample .env
+    ```
+  - Fill in the variables with the correct configurations
+
 - Start app
   ```
   npm start
