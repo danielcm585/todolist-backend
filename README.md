@@ -20,7 +20,7 @@
       ```
       mysql -u <username> -p
       ```
-    - Run `init.sql` 
+    - Create database
       ```
       create database todolist;
       ```
