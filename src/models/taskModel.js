@@ -13,7 +13,7 @@ Task.init({
     type: DataTypes.STRING(255),
     allowNull: false,
   },
-  due_date: {
+  dueDate: {
     type: DataTypes.DATE,
     allowNull: false,
   }
@@ -22,7 +22,7 @@ Task.init({
   modelName: 'Task'
 });
 
-Task.belongsTo(User, { foreignKey: 'owner_id' });
-User.hasMany(Task, { foreignKey: 'owner_id' });
+Task.belongsTo(User, { foreignKey: 'ownerId' });
+User.hasMany(Task, { foreignKey: 'ownerId' });
 
 module.exports = Task;

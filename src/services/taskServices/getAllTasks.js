@@ -3,10 +3,9 @@ const findTaskByOwner = require('../../repository/taskRepository/findTaskByOwner
 const getAllTasks = async (req, res) => {
   try {
     const tasks = await findTaskByOwner(req.user.id);
-    if (!tasks) throw new Error();
     return res.status(201).json({
       message: 'Success' ,
-      data: tasks
+      data: tasks || []
     });
   }
   catch (err) {

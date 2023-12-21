@@ -5,8 +5,8 @@ const createTask = async (name, description, dueDate, ownerId) => {
     const task = await Task.create({
       name: name,
       description: description,
-      due_date: dueDate,
-      owner_id: ownerId
+      dueDate: dueDate,
+      ownerId: ownerId
     });
     console.log(task)
     return task.dataValues;
