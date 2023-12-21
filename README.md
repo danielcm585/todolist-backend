@@ -4,7 +4,8 @@
 
 - Clone repository
   ```
-  git clone 
+  git clone https://github.com/danielcm585/todolist-backend.git
+  cd todolist-backend
   ```
 
 - Install dependencies
@@ -15,13 +16,13 @@
 - Setup database server environment
   - Creating `.env` file in form of `.env.sample`
   - Initialize database 
-    - Run mysql
+    - Run mysql 
       ```
       mysql -u <username> -p
       ```
     - Run `init.sql` 
       ```
-      SOURCE ./
+      create database todolist;
       ```
 
 - Start app
