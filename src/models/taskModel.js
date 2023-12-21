@@ -16,7 +16,12 @@ Task.init({
   dueDate: {
     type: DataTypes.DATE,
     allowNull: false,
-  }
+  },
+  isDone: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+    defaultValue: false,  // Optional: set a default value
+  },
 }, {
   sequelize,
   modelName: 'Task'
